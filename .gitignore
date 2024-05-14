@@ -1,0 +1,11 @@
+# Ignore Terraform provider binaries
+.terraform/providers/*
+
+# Exclude any large files
+*.tar.gz
+*.zip
+*.rar
+*.exe
+*.dll
+*.so
+*.a
