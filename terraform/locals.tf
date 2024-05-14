@@ -1,4 +1,4 @@
 locals {
-  bucket_name = "csg-test"
+  bucket_name = "csgtest"
   table_name  = "csgtest"
 }
