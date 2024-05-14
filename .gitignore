@@ -1,5 +1,15 @@
 # Ignore Terraform provider binaries
-terraform/.terraform/providers/*
+**/.terraform/providers/*
+
+# State files 
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+*.log
+
+# Sensitive data
+*.tfvars
 
 # Exclude any large files
 *.tar.gz
