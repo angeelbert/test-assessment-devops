@@ -1,5 +1,5 @@
 # Ignore Terraform provider binaries
-.terraform/providers/*
+terraform/.terraform/providers/*
 
 # Exclude any large files
 *.tar.gz
