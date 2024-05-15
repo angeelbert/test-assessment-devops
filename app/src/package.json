@@ -1,0 +1,23 @@
+{
+  "name": "csgtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeelbert/test-assessment-devops.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angeelbert/test-assessment-devops/issues"
+  },
+  "homepage": "https://github.com/angeelbert/test-assessment-devops#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
