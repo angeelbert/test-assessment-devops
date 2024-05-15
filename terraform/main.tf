@@ -22,3 +22,9 @@ module "tf-state" {
   bucket_name = local.bucket_name
   table_name  = local.table_name
 }
+
+module "ecrRepo" {
+  source = "./modules/ecr"
+
+  ecr_repo_csgtest = local.ecr_repo_csgtest
+}
