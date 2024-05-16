@@ -1,7 +1,7 @@
 terraform {
   required_version = "~> 1.3"
 
-    backend "s3" {
+  backend "s3" {
     bucket         = "csgtest"
     key            = "tf-infra/terraform.tfstate"
     region         = "us-east-1"
@@ -12,7 +12,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.0"
+      version = "5.49.0"
     }
   }
 }
