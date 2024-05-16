@@ -1,5 +1,4 @@
 terraform {
-
   backend "s3" {
     bucket         = "csgtest"
     key            = "tf-infra/terraform.tfstate"
@@ -14,12 +13,6 @@ terraform {
       version = "5.49.0"
     }
   }
-}
-
-module "tf-state" {
-  source      = "./modules/tf-state"
-  bucket_name = local.bucket_name
-  table_name  = local.table_name
 }
 
 module "ecrRepo" {
