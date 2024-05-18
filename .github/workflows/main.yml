@@ -70,6 +70,7 @@ jobs:
 
   deploy_testing:
     if: github.ref == 'refs/heads/develop'
+    name: Deploy to Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
