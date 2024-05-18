@@ -1,12 +1,4 @@
 terraform {
-  backend "s3" {
-    bucket         = "csgtest"
-    key            = "tf-infra/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "csgtest"
-    encrypt        = true
-  }
-
   required_providers {
     aws = {
       source  = "hashicorp/aws"
