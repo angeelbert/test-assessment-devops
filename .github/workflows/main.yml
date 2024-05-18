@@ -63,10 +63,10 @@ jobs:
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
-      # - name: Terraform Destroy
-      #   run: |
-      #     cd terraform
-      #     terraform destroy -auto-approve
+      - name: Terraform Destroy
+        run: |
+          cd terraform
+          terraform destroy -auto-approve
 
   deploy_testing:
     if: github.ref == 'refs/heads/develop'
@@ -123,7 +123,7 @@ jobs:
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
-      # - name: Terraform Destroy
-      #   run: |
-      #     cd terraform
-      #     terraform destroy -auto-approve
+      - name: Terraform Destroy
+        run: |
+          cd terraform
+          terraform destroy -auto-approve
